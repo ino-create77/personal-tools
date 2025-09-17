@@ -1,0 +1,106 @@
+@charset "utf-8";
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+section{
+	padding: 110px 0;
+}
+
+.contents-wrapper{
+	width: calc(100% - 100px);
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.strength{
+    background-color: rgb(243, 243, 243);
+}
+
+.strength-headline{
+    margin-bottom: 2em;
+}
+
+.strength-contents{
+    width: 100%;
+    margin: auto;
+}
+
+.strength-card-wrap {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(16px, 1.7903vw + 2.25px, 30px);
+}
+
+/* @media screen and (max-width: 768px) {
+    .strength-card-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+
+
+.strength-card{
+    /* width: calc((100% - 60px) / 3); */
+    /* width: calc((100% - clamp(30px, 4.8860vw + -13.29px, 60px)) / 3); */
+    /* margin-bottom: 1.5em; */
+    /* padding: 2.5em 1.5em; */
+    /* padding: clamp(20px, 3.1546vw + -7.32px, 40px) clamp(12px, 1.8927vw + -4.39px, 24px); */
+    /* padding: clamp(24px, 2.8881vw + -1.59px, 40px) clamp(16px, 1.4440vw + 3.21px, 24px); */
+    background-color: rgb(255, 255, 255);
+    /* display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;; */
+}
+
+
+
+.strength-card a {
+    display: block;
+    text-decoration: none;
+    /* padding: clamp(16px, 1.4440vw + 3.21px, 24px); */
+}
+
+.strength-imgwrap {
+    width: 100%;
+    height: AUTO;
+    /* margin-bottom: 1.5em; */
+    margin-bottom: clamp(12px, 1.9544vw + -5.32px, 24px);
+}
+
+.strength-card img{
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    /* height: 100px; */
+    
+    /* vertical-align: bottom;
+    margin-bottom: 1em; */
+}
+
+.strength-card-headline{
+    /* font-size: 1.56rem; */
+    font-size: clamp(14px, 0.2558vw + 12.04px, 16px);
+    color: rgb(0, 0, 0);
+    /* margin-bottom: 1.5em; */
+    margin-bottom: clamp(12px, 1.9544vw + -5.32px, 24px);
+    text-align: LEFT;
+    padding: 0 10PX;
+}
+
+/* .strength-text {
+    font-size: clamp(14px, 0.3257vw + 11.11px, 16px);
+}
+
+.strength-text + .strength-text{
+    margin-top: .8em;
+} */
