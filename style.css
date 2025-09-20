@@ -97,7 +97,7 @@ section{
     margin-bottom: clamp(12px, 1.9544vw + -5.32px, 24px);
     text-align: LEFT;
     padding: 10PX;
-    position: sticky;
+    position: static;
     border-bottom: unset;
     margin-top: 10px;
     font-weight: normal;
